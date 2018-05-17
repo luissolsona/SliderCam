@@ -15,13 +15,13 @@ void Screen::set(){
   TFT screen = TFT(cs, dc, rst);
   screen_ = &screen;
   screen.begin();
-  screen.setRotation(180);
+  screen.setRotation(90);
 
   screen.background(0, 0, 0);
   screen.stroke(255, 112, 67);
   screen.setTextSize(1);
 
-  screen.text("RinconIngenieril", 15, 5);
+  screen.text("SliderCAM Arduino", 15, 5);
   screen.line(0, 15, 128, 15);
 }
 
