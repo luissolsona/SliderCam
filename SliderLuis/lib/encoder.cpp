@@ -10,7 +10,7 @@ Encoder::Encoder(Screen* screen, Motor* motor){
 /*
 *   When the rotatory enconder go clock-wise
 */
-void Encoder::clockWise(){
+void Encoder::giroDerecha(){
   //Timeout to prevent debounce on the rotatory encoder
   if((millis() - time_) > changeTime_){
     time_ = millis();
@@ -61,7 +61,7 @@ void Encoder::clockWise(){
 /*
 *   When the rotatory encoder go counter-clock-wise
 */
-void Encoder::counterClockWise(){
+void Encoder::giroIzquierda(){
   //Time out to prevent debounce on the rotatory encoder
   if((millis() - time_) > changeTime_){
     time_ = millis();
@@ -112,7 +112,7 @@ void Encoder::counterClockWise(){
 /*
 *   When the button is pressed
 */
-void Encoder::button(){
+void Encoder::presBoton(){
   //Emergency stop when the motor is moving
   if(motor_->getWorking()){
     motor_->setWorking(false);
@@ -154,7 +154,7 @@ void Encoder::button(){
 
 }
 
-void Encoder::drawSubmenu(){
+void Encoder::dibujaSubmenu(){
   switch (screen_->getPosition()) {
     case 0:
       screen_->byPosition(motor_->getTarget());

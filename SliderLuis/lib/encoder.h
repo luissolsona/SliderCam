@@ -1,14 +1,14 @@
 #include <Arduino.h>
-#include "screen.h"
+#include "pantalla.h"
 #include "motor.h"
 
 class Encoder{
   public:
     Encoder(Screen* screen, Motor* motor);
-    void clockWise();
-    void counterClockWise();
-    void button();
-    void drawSubmenu();
+    void giroDerecha();
+    void giroIzquierda();
+    void presBoton();
+    void dibujaSubmenu();
   private:
     Screen* screen_;
     Motor* motor_;
