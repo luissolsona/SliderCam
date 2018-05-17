@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "screen.h"
 
 Screen::Screen(){

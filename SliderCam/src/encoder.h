@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "screen.h"
 #include "motor.h"
 
@@ -6,7 +7,7 @@ class Encoder{
     Encoder(Screen* screen, Motor* motor);
     void clockWise();
     void counterClockWise();
-    void button();    
+    void button();
     void drawSubmenu();
   private:
     Screen* screen_;

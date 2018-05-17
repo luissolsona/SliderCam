@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "motor.h"
 
 Motor::Motor(int stepPin, int dirPin, int enablePin){
@@ -175,10 +176,9 @@ bool Motor::getLoop(){
 
 void Motor::setLoop(bool loop){
   this->setTime(time_, 240);
-  loop_ = loop;  
+  loop_ = loop;
 }
 
 int Motor::getlength(){
   return length_;
 }
-

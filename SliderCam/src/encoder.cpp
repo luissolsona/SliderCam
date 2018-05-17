@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "encoder.h"
 
 Encoder::Encoder(Screen* screen, Motor* motor){
