@@ -1,10 +1,9 @@
-#include <Arduino.h>
-#include <encoder.h>
+#include "encoder.h"
 
 Encoder::Encoder(Screen* screen, Motor* motor){
   screen_ = screen;
   motor_ = motor;
-  changeTime_ = 2;
+  changeTime_ = 20;
 }
 
 /*
