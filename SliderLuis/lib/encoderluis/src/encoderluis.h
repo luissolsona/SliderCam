@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include "screenluis.h"
 #include "motorluis.h"
 

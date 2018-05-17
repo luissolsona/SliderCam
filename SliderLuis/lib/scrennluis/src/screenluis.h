@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <TFT.h>
 #include <SPI.h>
 

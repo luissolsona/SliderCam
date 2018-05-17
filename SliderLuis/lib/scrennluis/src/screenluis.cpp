@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include "screenluis.h"
 
 Screen::Screen(){
@@ -22,7 +21,7 @@ void Screen::set(){
   screen.stroke(255, 112, 67);
   screen.setTextSize(1);
 
-  screen.text("SlideCam RatRig", 17, 5);
+  screen.text("SliderCAM Arduino", 15, 5);
   screen.line(0, 15, 128, 15);
 }
 

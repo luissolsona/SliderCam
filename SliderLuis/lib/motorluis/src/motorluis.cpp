@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include "motorluis.h"
 
 Motor::Motor(int stepPin, int dirPin, int enablePin){
