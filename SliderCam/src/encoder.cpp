@@ -12,8 +12,8 @@ Encoder::Encoder(Screen* screen, Motor* motor){
 */
 void Encoder::clockWise(){
   //Timeout to prevent debounce on the rotatory encoder
-  if((millis() - time_) > changeTime_){
-    time_ = millis();
+//  if((millis() - time_) > changeTime_){
+//    time_ = millis();
     // If we are in the menu (getEntered == false),
     // update the position of the arrow
     if(digitalRead(3) == HIGH && screen_->getEntered() == false){
@@ -55,7 +55,7 @@ void Encoder::clockWise(){
           break;
       }
     }
-  }
+//  }
 }
 
 /*
@@ -63,8 +63,8 @@ void Encoder::clockWise(){
 */
 void Encoder::counterClockWise(){
   //Time out to prevent debounce on the rotatory encoder
-  if((millis() - time_) > changeTime_){
-    time_ = millis();
+//  if((millis() - time_) > changeTime_){
+//    time_ = millis();
     // If we are in the menu (getEntered == false)
     // update the position of the arrow
     if(digitalRead(2) == HIGH && screen_->getEntered() == false){
@@ -106,7 +106,7 @@ void Encoder::counterClockWise(){
           break;
       }
     }
-  }
+//  }
 }
 
 /*

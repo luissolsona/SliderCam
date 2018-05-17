@@ -38,6 +38,7 @@ void Screen::menu(){
   screen_->text("Position", 15, 30);
   screen_->text("Time", 15, 50);
   screen_->text("Loop", 15, 70);
+  screen_->text("New", 15, 90);
 
   this->updateArrow();
 }
@@ -198,13 +199,13 @@ void Screen::byLoop(bool state){
 
 int Screen::addPosition(){
     position_++;
-    if(position_ > 2)  position_ = 0;
+    if(position_ > 3)  position_ = 0;
 
 }
 
 int Screen::substractPosition(){
     position_--;
-    if(position_ < 0)  position_ = 2;
+    if(position_ < 0)  position_ = 3;
 
 }
 
@@ -230,6 +231,7 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 50);
       screen_->text(">", 0, 70);
+      screen_->text("A", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 30);
       break;
@@ -237,6 +239,7 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 30);
       screen_->text(">", 0, 70);
+      screen_->text("A", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 50);
       break;
@@ -244,8 +247,17 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 30);
       screen_->text(">", 0, 50);
+      screen_->text("A", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 70);
+      break;
+    case 3:
+      screen_->stroke(0, 0, 0);
+      screen_->text(">", 0, 30);
+      screen_->text(">", 0, 50);
+      screen_->text(">", 0, 70);
+      screen_->stroke(255, 255, 255);
+      screen_->text("A", 0, 90);
       break;
   }
 }
