@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "encoder.h"
+#include "encoderluis.h"
 
 Encoder::Encoder(Screen* screen, Motor* motor){
   screen_ = screen;

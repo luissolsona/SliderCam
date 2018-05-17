@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "motor.h"
+#include "motorluis.h"
 
 Motor::Motor(int stepPin, int dirPin, int enablePin){
   stepPin_ = stepPin;

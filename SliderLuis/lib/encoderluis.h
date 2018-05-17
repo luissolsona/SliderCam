@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "screen.h"
-#include "motor.h"
+#include "screenluis.h"
+#include "motorluis.h"
 
 class Encoder{
   public:
