@@ -4,7 +4,7 @@
 Encoder::Encoder(Screen* screen, Motor* motor){
   screen_ = screen;
   motor_ = motor;
-  changeTime_ = 20;
+  changeTime_ = 2;
 }
 
 /*
