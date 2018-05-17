@@ -231,7 +231,7 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 50);
       screen_->text(">", 0, 70);
-      screen_->text("A", 0, 90);
+      screen_->text(">", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 30);
       break;
@@ -239,7 +239,7 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 30);
       screen_->text(">", 0, 70);
-      screen_->text("A", 0, 90);
+      screen_->text(">", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 50);
       break;
@@ -247,7 +247,7 @@ void Screen::updateArrow(){
       screen_->stroke(0, 0, 0);
       screen_->text(">", 0, 30);
       screen_->text(">", 0, 50);
-      screen_->text("A", 0, 90);
+      screen_->text(">", 0, 90);
       screen_->stroke(255, 255, 255);
       screen_->text(">", 0, 70);
       break;
@@ -257,7 +257,7 @@ void Screen::updateArrow(){
       screen_->text(">", 0, 50);
       screen_->text(">", 0, 70);
       screen_->stroke(255, 255, 255);
-      screen_->text("A", 0, 90);
+      screen_->text(">", 0, 90);
       break;
   }
 }
